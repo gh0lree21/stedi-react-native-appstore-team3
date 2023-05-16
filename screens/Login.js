@@ -8,15 +8,10 @@ export default function Login(props){
             <Button title="Log In" onPress={()=>props.setUserLoggedIn(true)}></Button>
             <Text>Hello Ryan</Text>
             <Button title="ryanButton" onPress={()=>console.log("Hello Ryan")}></Button>
-        
-
-            <Text>Hello Samantha</Text>
-            <Button title="SamanthaButton" onPress={()=>console.log("Hello Samantha")}></Button>
-      
-
-            <Text>Brian's Button</Text>
-            <Button title="BrianButton" onPress= {console.log("Hello Brian")}></Button>
-
+            <Button title="Grant Button" onPress={()=>
+                console.log("Hello there")}></Button>
+            <Button title="Brian Button" onPress={()=>console.log("Hello Brian")}></Button>
+            <Button title="Sam's Button" onPress={()=>console.log("Hello Sam")}></Button>
         </View>
     )
     
@@ -25,6 +20,7 @@ export default function Login(props){
 const styles = StyleSheet.create({
     login: {
         flexDirection: 'row',
+        flexWrap: 'wrap',
         width: '100%',
         justifyContent: 'space-between',
         backgroundColor: 'green',
